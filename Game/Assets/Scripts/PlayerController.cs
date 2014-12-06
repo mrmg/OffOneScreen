@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CharacterBase : MonoBehaviour {
 	public bool onGround = false;
+	public Light spotlight;
 	
 	// Use this for initialization
 	void Start () {
@@ -10,15 +11,11 @@ public class CharacterBase : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-		if (gameObject.rigidbody.position.y < -6) {
-			Debug.Log ("player died");
-		}
+	void Update() {
 	}
 	
 	void OnCollisionEnter (Collision col) {
-		if (col.gameObject.name == "Monitor" || col.gameObject.name == "MonitorScreen") {
+		if (col.gameObject.name == "Monitor" || col.gameObject.name == "Screen") {
 			onGround = true;
 		}
 	}
@@ -39,6 +36,9 @@ public class PlayerController : CharacterBase {
 	
 	// Update is called once per frame
 	void Update () {
+		//base.Update ();
+		spotlight.transform.LookAt (gameObject.transform);
+
 		float xMove = Input.GetAxis (horizontalControl);
 		float zMove = Input.GetAxis (verticalControl);
 		float yMove = 0f;
