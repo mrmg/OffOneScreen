@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c70920ffd9ed39f488fad398de412f26
+guid: 8584a4c4e17d6214e88d1a26d3d5cc48
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -12,6 +12,15 @@ ModelImporter:
     100012: SketchUp.005
     100014: SketchUp.006
     100016: SketchUp.007
+    100018: SketchUp.008
+    100020: Button1
+    100022: Button2
+    100024: Button3
+    100026: MonitorFrame
+    100028: Screen
+    100030: StandBar
+    100032: StandBaseMain
+    100034: StandBaseTop
     400000: //RootNode
     400002: SketchUp
     400004: SketchUp.001
@@ -21,6 +30,15 @@ ModelImporter:
     400012: SketchUp.005
     400014: SketchUp.006
     400016: SketchUp.007
+    400018: SketchUp.008
+    400020: Button1
+    400022: Button2
+    400024: Button3
+    400026: MonitorFrame
+    400028: Screen
+    400030: StandBar
+    400032: StandBaseMain
+    400034: StandBaseTop
     2300000: SketchUp
     2300002: SketchUp.001
     2300004: SketchUp.002
@@ -29,6 +47,15 @@ ModelImporter:
     2300010: SketchUp.005
     2300012: SketchUp.006
     2300014: SketchUp.007
+    2300016: SketchUp.008
+    2300018: Button1
+    2300020: Button2
+    2300022: Button3
+    2300024: MonitorFrame
+    2300026: Screen
+    2300028: StandBar
+    2300030: StandBaseMain
+    2300032: StandBaseTop
     3300000: SketchUp
     3300002: SketchUp.001
     3300004: SketchUp.002
@@ -37,14 +64,32 @@ ModelImporter:
     3300010: SketchUp.005
     3300012: SketchUp.006
     3300014: SketchUp.007
-    4300000: SketchUp.006
-    4300002: SketchUp.005
-    4300004: SketchUp.004
-    4300006: SketchUp.003
-    4300008: SketchUp.002
-    4300010: SketchUp.001
-    4300012: SketchUp
-    4300014: SketchUp.007
+    3300016: SketchUp.008
+    3300018: Button1
+    3300020: Button2
+    3300022: Button3
+    3300024: MonitorFrame
+    3300026: Screen
+    3300028: StandBar
+    3300030: StandBaseMain
+    3300032: StandBaseTop
+    4300000: SketchUp.008
+    4300002: SketchUp.007
+    4300004: SketchUp.006
+    4300006: SketchUp.005
+    4300008: SketchUp.004
+    4300010: SketchUp.003
+    4300012: SketchUp.002
+    4300014: SketchUp.001
+    4300016: SketchUp
+    4300018: StandBaseTop
+    4300020: StandBaseMain
+    4300022: Screen
+    4300024: StandBar
+    4300026: Button1
+    4300028: Button2
+    4300030: Button3
+    4300032: MonitorFrame
     6400000: SketchUp
     6400002: SketchUp.001
     6400004: SketchUp.002
@@ -53,6 +98,15 @@ ModelImporter:
     6400010: SketchUp.005
     6400012: SketchUp.006
     6400014: SketchUp.007
+    6400016: SketchUp.008
+    6400018: Button1
+    6400020: Button2
+    6400022: Button3
+    6400024: MonitorFrame
+    6400026: Screen
+    6400028: StandBar
+    6400030: StandBaseMain
+    6400032: StandBaseTop
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -61,7 +115,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
@@ -76,7 +130,7 @@ ModelImporter:
     globalScale: 10
     meshCompression: 0
     addColliders: 1
-    importBlendShapes: 0
+    importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -87,10 +141,10 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
   tangentSpace:
-    normalSmoothAngle: 66
+    normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 0
+    tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

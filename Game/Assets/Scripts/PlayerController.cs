@@ -2,30 +2,28 @@
 using System.Collections;
 
 public class PlayerController : CharacterBase {
-	public float maxSpeed = 5f;
-	public float jumpSpeed = 250f;
 
-	public string horizontalControl = "Horizontal";
-	public string verticalControl = "Vertical";
-	public string jumpControl = "Jump";
+	protected void Update () {
+		base.Update();
 
-	// Use this for initialization
-	void Start () {
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
 		float xMove = Input.GetAxis (horizontalControl);
 		float zMove = Input.GetAxis (verticalControl);
 		float yMove = 0f;
 
-		if (Input.GetButtonDown (jumpControl) && onGround) {
-			onGround = false;
-			yMove = 1;
+		if (Input.GetButtonDown (jumpControl)) {
+			if(currentState == State.Rolling) {
+				currentState = State.Jumping;
+				yMove = 1;
+			} else if(currentState == State.Jumping) {
+				Vector3 vel = gameObject.rigidbody.velocity;
+				vel = new Vector3(0, -5, 0);
+				gameObject.rigidbody.velocity = vel;
+				currentState = State.Dropping;
+				return;
+			}
 		}
 
-		gameObject.rigidbody.AddForce( new Vector3 (xMove * maxSpeed, yMove * jumpSpeed, zMove * maxSpeed) );
+		gameObject.rigidbody.AddForce( new Vector3 (xMove * moveSpeed, yMove * jumpSpeed, zMove * moveSpeed) );
 	}
 
 }
